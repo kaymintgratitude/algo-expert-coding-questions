@@ -33,7 +33,6 @@ def smallest_difference(array_one, array_two):
     while pointer_one < len(array_one) and pointer_two < len(array_two):
         difference = abs(array_one[pointer_one]-array_two[pointer_two])
         current = min(current, difference)
-        .0
 
         if current < minimum:
             smallest_pair = [array_one[pointer_one], array_two[pointer_two]]
