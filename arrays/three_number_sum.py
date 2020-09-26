@@ -43,7 +43,7 @@ def three_number_sum(arr, targetSum):
             else:
                 right_pointer -= 1
     
-    return triplets
+    return sorted(triplets, key=lambda x: x[0]) if triplets else triplets
 
 
 class TestThreeNumberSum(unittest.TestCase):
