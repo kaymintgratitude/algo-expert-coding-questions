@@ -18,6 +18,7 @@ Description:    Write a function that take in a non-empty array of distinct inte
                 [-1, 11]
                
 """
+import unittest
 
 
 def two_number_sum(arr, targetSum):
@@ -33,4 +34,22 @@ def two_number_sum(arr, targetSum):
         dedup_set.add(currentNum)
     
     return []
+
+
+class TestTwoNumberSum(unittest.TestCase):
+    
+    def test_input_array_has_valid_two_number_sum(self):
+        actual = two_number_sum([ 3, 5, -4, 8, 11, 1, -1, 6], 10)
+        expected = [11, -1]
+        self.assertEqual(expected, actual)
+
+    def test_input_array_has_invalid_two_number_sum(self):
+        actual = two_number_sum([], 10)
+        expected = []
+        self.assertEqual(expected, actual)     
+
+
+
+if __name__ == "__main__":
+    unittest.main()
 
