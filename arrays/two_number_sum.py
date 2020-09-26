@@ -24,7 +24,7 @@ import unittest
 def two_number_sum(arr, targetSum):
     '''
     Time Complexity: O(n)
-    Space Complexity: O(1)
+    Space Complexity: O(n)
     '''
     dedup_set = set()
     for currentNum in arr:
