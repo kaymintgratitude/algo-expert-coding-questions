@@ -20,6 +20,10 @@ import unittest
 
 
 def move_element_to_end(arr, to_move):
+    """
+    Time Complexity: O(n)
+    Space Complexity: O(1)
+    """
     start = 0
     end = len(arr) - 1
 
