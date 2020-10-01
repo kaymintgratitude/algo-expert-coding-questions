@@ -44,7 +44,7 @@ def zigzag_traverse(arr):
                 row += 1
                 col -= 1
         else:
-            if row == 0 or col == height:
+            if row == 0 or col == width:
                 going_down = True
                 if col == width:
                     row += 1
